@@ -1,0 +1,40 @@
+<nav class="app-bottom-navigation" id="bottomNav" style="display:block">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <ul class="app-bottom-navigation__list">
+        <li class="app-bottom-navigation__item">
+          <a class="app-bottom-navigation__link" href="/{{ scenario }}/{{ scenario }}-home.html">
+            {{ nhsappIcon('homeFilled') if hub == "Home" else nhsappIcon('home') }}
+            <span class="app-bottom-navigation__label {{ 'app-bottom-navigation__label--active' if hub == 'Home' }}">Home</span>
+          </a>
+        </li>
+        <li class="app-bottom-navigation__item">
+          <a class="app-bottom-navigation__link" href="/{{ scenario }}/{{ scenario }}-services.html">
+            {{ nhsappIcon('crossFilled') if hub == "Services" else nhsappIcon('cross') }}
+            <span class="app-bottom-navigation__label {{ 'app-bottom-navigation__label--active' if hub == 'Services' }}">Services</span>
+          </a>
+        </li>
+        <li class="app-bottom-navigation__item">
+          <a class="app-bottom-navigation__link" href="/{{ scenario }}/{{ scenario }}-yourhealth.html">
+            {{ nhsappIcon('heartFilled') if hub == "Your health" else nhsappIcon('heart') }}
+            <span class="app-bottom-navigation__label {{ 'app-bottom-navigation__label--active' if hub == 'Your health' }}">Your health</span>
+          </a>
+        </li>
+        <li class="app-bottom-navigation__item">
+          {% if scenario == "scenario4" %}
+            <a class="app-bottom-navigation__link" href="/{{ scenario }}/{{ scenario }}-messages.html">
+          {% else %}
+            <a class="app-bottom-navigation__link" href="#">  <!-- Disabled for other scenarios -->
+          {% endif %}
+            {% if hub == "Messages" %}
+              {{ nhsappIcon('messagesFilled') }}
+            {% else %}
+              {{ nhsappIcon('messages') }}
+            {% endif %}
+            <span class="app-bottom-navigation__label {{ 'app-bottom-navigation__label--active' if hub == 'Messages' }}">Messages</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

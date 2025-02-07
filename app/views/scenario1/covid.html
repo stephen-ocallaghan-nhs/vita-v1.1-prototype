@@ -1,0 +1,122 @@
+{% extends 'layout-app.html' %} {% set hub = "Vaccinations" %} {% set
+pageHeading = "COVID-19 vaccine" %} {% set pageDescription = "The RSV vaccine helps protect against respiratory syncytial virus (RSV), a common virus that can make babies and older adults seriously ill. It's recommended during pregnancy and for adults aged 75 to 79." %} {% block content %} {{ backLink({ href:
+"/scenario1/vaccinations", text: "Go back" }) }}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <!-- DYNAMIC PAGE TITLE -->
+    {{ dynamicPageTitle({ title: pageHeading, titleSecondary: true, description:
+    pageDescription })}}
+
+    <div class="nhsuk-warning-callout">
+  <h3 class="nhsuk-warning-callout__label">
+    <span role="text">
+      <span class="nhsuk-u-visually-hidden">Important: </span>
+      Booking service closed
+    </span>
+  </h3>
+  <p>You can no longer book a COVID-19 vaccination using this online service.
+    <br>Bookings can also no longer be made through the 119 service.
+    <br>COVID-19 vaccinations will be available again in Spring. The NHS will contact you if your NHS record suggests you may be eligible.</p>
+</div>
+
+    <!-- Vaccinations -->
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <!--How-->
+  <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+        How to get the COVID-19 vaccine
+      </span>
+    </summary>
+    <div class="nhsuk-details__text">
+      <p>Try to check your blood:</p>
+      <ul>
+        <li>before meals</li>
+        <li>2 to 3 hours after meals</li>
+        <li>before, during (take a break) and after exercise</li>
+      </ul>
+      <p>This helps you understand your blood glucose levels and how they’re affected by meals and exercise. It should help you have more stable blood glucose levels.</p>
+
+    </div>
+  </details>
+
+        <!-- Vaccinations -->
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-full">
+            <div
+              class="nhsapp-section-heading"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+              "
+            >
+              <h2 class="nhsuk-heading-s" style="margin: 0">More information</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <div class="nhsuk-u-padding-bottom-3"></div>
+
+<!--more information--> 
+<div class="nhsuk-expander-group">
+
+<!--What-->
+  <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+        What the COVID-19 vaccine is for
+      </span>
+    </summary>
+    <div class="nhsuk-details__text">
+      <p>The RSV vaccine helps protect against respiratory syncytial virus (RSV).
+        RSV is a common cause of coughs and colds. Most people get it several times during their life.</p>
+      <p>It usually gets better by itself, but in some people (especially babies and older adults) it can cause illnesses such as:</p>
+      <ul>
+        <li>pneumonia (a lung infection)</li>
+        <li>bronchiolitis (a chest infection that affects babies)</li>
+      </ul>
+      <p>These illnesses can cause serious breathing problems. They may need to be treated in hospital and can be life-threatening. 
+           <div class="nhsuk-u-padding-bottom-3"></div>
+      Getting RSV can also make your symptoms worse if you have a lung condition, such as chronic obstructive pulmonary disorder (COPD).
+           <div class="nhsuk-u-padding-bottom-3"></div>
+      The RSV vaccine helps reduce the risk of serious breathing problems like pneumonia and bronchiolitis.</p>
+
+    </div>
+  </details>
+<!--Who-->
+  <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+        Who should have the COVID-19 vaccine
+      </span>
+    </summary>
+    <div class="nhsuk-details__text">
+      <p>The RSV vaccine is recommended if:</p>
+      <ul>
+        <li>you're pregnant – the vaccine is recommended during every pregnancy (from 28 weeks onwards) to help protect your baby after they're born</li>
+        <li>you're aged 75 to 79</li>
+      </ul>
+      <div class="nhsuk-inset-text">
+    <span class="nhsuk-u-visually-hidden">Information: </span>
+
+    <p><b>If you're aged 80 or over</b>
+    <br>If you turned 80 after 1 September 2024, you're eligible for the RSV vaccine until 31 August 2025.
+    <br>You're not eligible for the RSV vaccine if you turned 80 on or before 1 September 2024.</p>
+    </div>
+
+    </div>
+  </details>
+
+
+<a href="#" class="nhsuk-link">Learn more about the COVID-19 vaccination on nhs.uk</a></div>
+      </div>
+    </div>
+
+    {% endblock %}
+  </div>
+</div>
