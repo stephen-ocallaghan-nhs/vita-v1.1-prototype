@@ -1,5 +1,5 @@
 {% extends 'layout-app.html' %} {% set hub = "Vaccinations" %} {% set
-pageHeading = "Flu vaccine" %} {% set pageDescription = "The RSV vaccine helps protect against respiratory syncytial virus (RSV), a common virus that can make babies and older adults seriously ill. It's recommended during pregnancy and for adults aged 75 to 79." %} {% block content %} {{ backLink({ href:
+pageHeading = "Flu vaccine" %} {% set pageDescription = "The flu vaccine helps protect against flu, which can be a serious or life-threatening illness. It's offered on the NHS every year in autumn or early winter to people at higher risk of getting seriously ill from flu." %} {% block content %} {{ backLink({ href:
 "/scenario1/vaccinations", text: "Go back" }) }}
 
 <div class="nhsuk-grid-row">
@@ -8,16 +8,10 @@ pageHeading = "Flu vaccine" %} {% set pageDescription = "The RSV vaccine helps p
     {{ dynamicPageTitle({ title: pageHeading, titleSecondary: true, description:
     pageDescription })}}
 
-    <div class="nhsuk-warning-callout">
-  <h3 class="nhsuk-warning-callout__label">
-    <span role="text">
-      <span class="nhsuk-u-visually-hidden">Important: </span>
-      Booking service closed
-    </span>
-  </h3>
-  <p>You can no longer book a COVID-19 vaccination using this online service.
-    <br>Bookings can also no longer be made through the 119 service.
-    <br>COVID-19 vaccinations will be available again in Spring. The NHS will contact you if your NHS record suggests you may be eligible.</p>
+    <div class="nhsuk-inset-text">
+  <span class="nhsuk-u-visually-hidden">Information: </span>
+
+  <p>This page is about the flu vaccine for adults. There are also pages about the <a href="#"> children's flu vaccine</a> and <a href="#" title="External website">flu jab in pregnancy.</a></p>
 </div>
 
     <!-- Vaccinations -->
@@ -47,11 +41,11 @@ pageHeading = "Flu vaccine" %} {% set pageDescription = "The RSV vaccine helps p
 <!--more information--> 
 <div class="nhsuk-expander-group">
 
-<!--What-->
+<!--What
   <details class="nhsuk-details nhsuk-expander">
     <summary class="nhsuk-details__summary">
       <span class="nhsuk-details__summary-text">
-        What the COVID-19 vaccine is for
+        What the flu vaccine is for
       </span>
     </summary>
     <div class="nhsuk-details__text">
@@ -69,27 +63,27 @@ pageHeading = "Flu vaccine" %} {% set pageDescription = "The RSV vaccine helps p
       The RSV vaccine helps reduce the risk of serious breathing problems like pneumonia and bronchiolitis.</p>
 
     </div>
-  </details>
+  </details> -->
 <!--Who-->
   <details class="nhsuk-details nhsuk-expander">
     <summary class="nhsuk-details__summary">
       <span class="nhsuk-details__summary-text">
-        Who should have the COVID-19 vaccine
+        Who should have the flu vaccine
       </span>
     </summary>
     <div class="nhsuk-details__text">
-      <p>The RSV vaccine is recommended if:</p>
+      <p>The flu vaccine is recommended for people at higher risk of getting seriously ill from flu.</p>
+      <p>It's offered on the NHS every year in autumn or early winter.</p>
+      <p>You can get the free NHS flu vaccine if you:</p>
       <ul>
-        <li>you're pregnant – the vaccine is recommended during every pregnancy (from 28 weeks onwards) to help protect your baby after they're born</li>
-        <li>you're aged 75 to 79</li>
+        <li>are aged 65 or over (including those who will be 65 by 31 March 2025)</li>
+        <li>have certain long-term health conditions</li>
+        <li>are pregnant</li>
+        <li>live in a care home</li>
+        <li>are the main carer for an older or disabled person, or receive a carer's allowance</li>
+        <li>live with someone who has a weakened immune system</li>
       </ul>
-      <div class="nhsuk-inset-text">
-    <span class="nhsuk-u-visually-hidden">Information: </span>
-
-    <p><b>If you're aged 80 or over</b>
-    <br>If you turned 80 after 1 September 2024, you're eligible for the RSV vaccine until 31 August 2025.
-    <br>You're not eligible for the RSV vaccine if you turned 80 on or before 1 September 2024.</p>
-    </div>
+      <h3 class="nhsuk-heading-xs">Frontline health and social care workers can also get a flu vaccine through their employer.</h3>
 
     </div>
   </details>
@@ -98,23 +92,30 @@ pageHeading = "Flu vaccine" %} {% set pageDescription = "The RSV vaccine helps p
   <details class="nhsuk-details nhsuk-expander">
     <summary class="nhsuk-details__summary">
       <span class="nhsuk-details__summary-text">
-        How to get the COVID-19 vaccine
+        How to get the flu vaccine
       </span>
     </summary>
     <div class="nhsuk-details__text">
-      <p>Try to check your blood:</p>
+      <p>If you're eligible for an NHS flu vaccine, you can:</p>
       <ul>
-        <li>before meals</li>
-        <li>2 to 3 hours after meals</li>
-        <li>before, during (take a break) and after exercise</li>
+        <li><a href="#">find a pharmacy that offers NHS flu vaccination</a> (if you're aged 18 or over)</li>
+        <li>contact your GP surgery to book an appointment</li>
       </ul>
-      <p>This helps you understand your blood glucose levels and how they’re affected by meals and exercise. It should help you have more stable blood glucose levels.</p>
+      <p>Some people may be able to get vaccinated through their maternity service, care home, or their employer if they are a frontline health or social care worker.</p>
+      <p>The last date you will be able to get your flu vaccination is 31 March 2025, but it's best to get vaccinated sooner to protect yourself during winter.</p>
+
+  <div class="nhsuk-inset-text">
+    <span class="nhsuk-u-visually-hidden">Information: </span>
+      <h3>Having the flu vaccine at the same time as other vaccines</h3>
+      <p>You can have the flu vaccine at the same time as other vaccines such as the COVID-19 and shingles vaccines.</p>
+      <p>It's not usually given at the same time as the RSV vaccine, but you can have them at the same time if a doctor or nurse thinks it's needed.</p>
+  </div>
 
     </div>
   </details>
 
 
-<a href="#" class="nhsuk-link">Learn more about the COVID-19 vaccination on nhs.uk</a></div>
+<a href="#" class="nhsuk-link">Learn more about the adult Flu vaccination on nhs.uk</a></div>
       </div>
     </div>
 
