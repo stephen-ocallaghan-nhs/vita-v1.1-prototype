@@ -1,5 +1,5 @@
 {% extends 'layout-app.html' %} {% set hub = "Vaccinations" %} {% set
-pageHeading = "RSV vaccine" %} {% set pageDescription = "The RSV vaccine helps protect against respiratory syncytial virus (RSV), a common virus that can make babies and older adults seriously ill. It's recommended during pregnancy and for adults aged 75 to 79." %} {% block content %} {{ backLink({ href:
+pageHeading = "Pneumococcal vaccine" %} {% set pageDescription = "The RSV vaccine helps protect against respiratory syncytial virus (RSV), a common virus that can make babies and older adults seriously ill. It's recommended during pregnancy and for adults aged 75 to 79." %} {% block content %} {{ backLink({ href:
 "/scenario1/vaccinations", text: "Go back" }) }}
 
 <div class="nhsuk-grid-row">
@@ -8,53 +8,22 @@ pageHeading = "RSV vaccine" %} {% set pageDescription = "The RSV vaccine helps p
     {{ dynamicPageTitle({ title: pageHeading, titleSecondary: true, description:
     pageDescription })}}
 
-    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
-  <div class="nhsuk-card--care__heading-container">
-    <h2 class="nhsuk-card--care__heading">
-      <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>We believe you might be eligible</span>
-    </h2>
-    <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
-  </div>
-
-  <div class="nhsuk-card__content">
-
-    <ul>
-      <li>you're aged between 75 and 79 </li>
-      <li>According to our records, you have not received the RSV vaccination</li>
-    </ul>
-    <p><a href="">Find out what to do if you don't think this is correct</a></p>
-
-  </div>
+    <div class="nhsuk-warning-callout">
+  <h3 class="nhsuk-warning-callout__label">
+    <span role="text">
+      <span class="nhsuk-u-visually-hidden">Important: </span>
+      Booking service closed
+    </span>
+  </h3>
+  <p>You can no longer book a COVID-19 vaccination using this online service.
+    <br>Bookings can also no longer be made through the 119 service.
+    <br>COVID-19 vaccinations will be available again in Spring. The NHS will contact you if your NHS record suggests you may be eligible.</p>
 </div>
-
-
-    <div class="nhsapp-card">
-      <div class="nhsapp-card__container">
-        <div class="nhsapp-card__content">
-          <a href="#" class="nhsapp-card__link nhsuk-link--no-visited-state">
-            Book, cancel or change an RSV vaccination appointment
-          </a>
-        </div>
-
-        <svg
-          class="nhsapp-icon nhsapp-icon__chevron-right"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-          focusable="false"
-          height="2rem"
-          width="2rem"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z"
-          />
-        </svg>
-      </div>
-    </div>
 
     <!-- Vaccinations -->
     <div class="nhsuk-grid-row">
       <div class="nhsuk-grid-column-full">
+
         <!-- Vaccinations -->
         <div class="nhsuk-grid-row">
           <div class="nhsuk-grid-column-full">
@@ -78,10 +47,11 @@ pageHeading = "RSV vaccine" %} {% set pageDescription = "The RSV vaccine helps p
 <!--more information--> 
 <div class="nhsuk-expander-group">
 
+<!--What-->
   <details class="nhsuk-details nhsuk-expander">
     <summary class="nhsuk-details__summary">
       <span class="nhsuk-details__summary-text">
-        What the RSV vaccine is for
+        What the COVID-19 vaccine is for
       </span>
     </summary>
     <div class="nhsuk-details__text">
@@ -100,11 +70,11 @@ pageHeading = "RSV vaccine" %} {% set pageDescription = "The RSV vaccine helps p
 
     </div>
   </details>
-
+<!--Who-->
   <details class="nhsuk-details nhsuk-expander">
     <summary class="nhsuk-details__summary">
       <span class="nhsuk-details__summary-text">
-        Who should have the RSV vaccine
+        Who should have the COVID-19 vaccine
       </span>
     </summary>
     <div class="nhsuk-details__text">
@@ -124,10 +94,11 @@ pageHeading = "RSV vaccine" %} {% set pageDescription = "The RSV vaccine helps p
     </div>
   </details>
 
+<!--How-->
   <details class="nhsuk-details nhsuk-expander">
     <summary class="nhsuk-details__summary">
       <span class="nhsuk-details__summary-text">
-        How to get the RSV vaccine
+        How to get the COVID-19 vaccine
       </span>
     </summary>
     <div class="nhsuk-details__text">
@@ -142,7 +113,8 @@ pageHeading = "RSV vaccine" %} {% set pageDescription = "The RSV vaccine helps p
     </div>
   </details>
 
-<a href="#" class="nhsuk-link">Learn more about the RSV vaccination on nhs.uk</a></div>
+
+<a href="#" class="nhsuk-link">Learn more about the COVID-19 vaccination on nhs.uk</a></div>
       </div>
     </div>
 

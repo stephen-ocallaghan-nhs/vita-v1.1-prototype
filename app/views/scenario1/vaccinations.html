@@ -1,8 +1,7 @@
-{% extends 'layout-app.html' %} {% set hub = "Vaccinations" %} {% set
-pageHeading = "Vaccinations" %} {% set pageDescription = "Based on your age,
-these vaccinations may be relevant - some vaccinations may not be needed or have
-already been given." %} {% block content %} {{ backLink({ href:
-"/scenario1/your-health-p9", text: "Go back" }) }}
+{% extends 'layout-app.html' %} {% set hub = "Your Health" %} {% set scenario =
+"scenario1" %} {% set
+pageHeading = "Vaccinations" %} {% set pageDescription = "Find out about vaccinations for babies, children and adults, including why they're important and how to get them." %} {% block content %} {{ backLink({ href:
+"/scenario1/scenario1-yourhealth", text: "Go back" }) }}
 
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-full">
@@ -11,7 +10,7 @@ already been given." %} {% block content %} {{ backLink({ href:
     pageDescription })}}
 
     <div class="nhsapp-section-heading">
-      <h2 class="nhsuk-heading-s">Quick links</h2>
+      <h2 class="nhsuk-heading-s">Book now</h2>
     </div>
     <div class="nhsapp-card">
       <div class="nhsapp-card__container">
@@ -52,8 +51,9 @@ already been given." %} {% block content %} {{ backLink({ href:
               "
             >
               <h2 class="nhsuk-heading-s" style="margin: 0">Vaccinations</h2>
-              <a href="#" class="nhsuk-link" style="margin: 0">View all</a>
+              <a href="/scenario1/all-vaccinations" class="nhsuk-link" style="margin: 0">View all</a>
             </div>
+            <div><br><p>Based on your age, these vaccinations may be relevant - some vaccinations may not be needed or have already been given.</p></div>
           </div>
         </div>
       </div>
@@ -66,7 +66,7 @@ already been given." %} {% block content %} {{ backLink({ href:
             <div class="nhsapp-card__container">
               <div class="nhsapp-card__content">
                 <a
-                  href="#"
+                  href="/scenario1/flu"
                   class="nhsapp-card__link nhsuk-link--no-visited-state"
                 >
                   Flu
@@ -144,7 +144,7 @@ already been given." %} {% block content %} {{ backLink({ href:
             <div class="nhsapp-card__container">
               <div class="nhsapp-card__content">
                 <a
-                  href="#"
+                  href="/scenario1/shingles"
                   class="nhsapp-card__link nhsuk-link--no-visited-state"
                 >
                   Shingles
@@ -170,7 +170,7 @@ already been given." %} {% block content %} {{ backLink({ href:
             <div class="nhsapp-card__container">
               <div class="nhsapp-card__content">
                 <a
-                  href="#"
+                  href="/scenario1/pneumococcal"
                   class="nhsapp-card__link nhsuk-link--no-visited-state"
                 >
                   Pneumococcal
