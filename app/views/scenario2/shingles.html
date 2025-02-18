@@ -1,0 +1,152 @@
+{% extends 'layout-app.html' %} {% set hub = "Vaccinations" %} {% set scenario =
+  "scenario2" %} {% set
+pageHeading = "Shingles vaccine" %} {% set pageDescription = "The shingles vaccine helps protect against shingles. It's recommended for all adults turning 65, those aged 70 to 79 and those aged 50 and over with a severely weakened immune system." %} {% block content %} {{ backLink({ href:
+"/scenario2/vaccinations", text: "Go back" }) }}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <!-- DYNAMIC PAGE TITLE -->
+    {{ dynamicPageTitle({ title: pageHeading, titleSecondary: true, description:
+    pageDescription })}}
+
+    <!-- Vaccinations -->
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+
+        <!-- Vaccinations -->
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-full">
+            <div
+              class="nhsapp-section-heading"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+              "
+            >
+              <h2 class="nhsuk-heading-s" style="margin: 0">More information</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <div class="nhsuk-u-padding-bottom-3"></div>
+
+<!--more information--> 
+<div class="nhsuk-expander-group">
+
+<!--What-->
+  <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+        What the Shingles vaccine is for
+      </span>
+    </summary>
+    <div class="nhsuk-details__text">
+      <p>Shingles is a common condition that causes a painful rash. It can sometimes lead to serious problems such as long-lasting pain, hearing loss or blindness.</p>
+      <p>You're more likely to get shingles, and it's more likely to cause serious problems, as you get older or if you have a severely weakened immune system.</p>
+      <p>The shingles vaccine helps:</p>
+      <ul>
+        <li>reduce your chances of getting shingles</li>
+        <li>reduce your chances of getting serious problems if you do get shingles</li>
+      </ul>
+
+    </div>
+  </details>
+<!--Who-->
+  <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+        Who should have the shingles vaccine
+      </span>
+    </summary>
+    <div class="nhsuk-details__text">
+      <p>The shingles vaccine is recommended for some older adults and people with a severely weakened immune system.</p>
+   
+      <table class="nhsuk-table">
+        <thead role="rowgroup" class="nhsuk-table__head">
+
+            <th role="columnheader" class="" scope="col" style="background-color: #d8dde0;">People who turn 65 on or after 1 September 2023</th>
+          </tr>
+        </thead>
+        <tbody class="nhsuk-table__body">
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell"><p>From 1 September 2023, you're eligible for the shingles vaccine when you turn 65.</p>
+              <p>You'll be offered 2 doses of the vaccine. These are given between 6 and 12 months apart.</p>
+              <p>Your GP should contact you to make an appointment to have your shingles vaccine. Contact your GP surgery if you think you're eligible for the shingles vaccine and you've not been contacted about it.</p>
+              <p>You'll remain eligible until your 80th birthday (but you can have your 2nd dose up until your 81st birthday).</p>
+              <h5>If you turned 65 before 1 September 2023, you'll be eligible for the shingles vaccine when you turn 70.</h5></td>
+          </tr>
+          <th role="columnheader" class="" scope="col" style="background-color: #d8dde0;">
+            People aged 70 to 79
+          </th>          
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell"><p>Everyone aged 70 to 79 is eligible for the shingles vaccine.</p>
+              <p>You'll be offered 2 doses of the vaccine. These are given between 6 and 12 months apart.</p>
+              <p>Contact your GP surgery if you missed your vaccine. You're eligible up until your 80th birthday (but you can have your 2nd dose up until your 81st birthday).</p>
+            </td>
+          </tr>
+          <th role="columnheader" class="" scope="col" style="background-color: #d8dde0;">
+            People aged 50 and over with a severely weakened immune system
+          </th>
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell"><p>You're eligible for the shingles vaccine if you're aged 50 or over and you're at higher risk from shingles because you have a severely weakened immune system.</p>
+              <p>This includes:</p>
+              <ul>
+                <li>some people with blood cancer (such as leukaemia or lymphoma)</li>
+                <li>some people with HIV or AIDS</li>
+                <li>some people who've recently had a stem cell transplant, radiotherapy, chemotherapy or an organ transplant</li>
+                <li>people taking certain medicines that severely weaken the immune system</li>
+              </ul>
+              <p>You'll be given 2 doses of the shingles vaccine. These are given between 8 weeks and 6 months apart.</p>
+              <p>Ask your GP or care team if you're not sure if you're eligible for the shingles vaccine.</p></td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </details>
+
+<!--How-->
+  <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+        How to get the Shingles vaccine
+      </span>
+    </summary>
+    <div class="nhsuk-details__text">
+      <p>Your GP surgery will usually contact you when you become eligible for the shingles vaccine. This will usually be by letter, text message, phone or email.</p>
+      <p>Sometimes you might be offered the vaccine during a GP appointment you're having for another reason.</p>
+      
+  <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+    <div class="nhsuk-card--care__heading-container">
+      <h2 class="nhsuk-card--care__heading">
+        <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>Speak to a GP if:</span>
+      </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+  </div>
+  <div class="nhsuk-card__content">
+
+    <ul>
+      <li>you think you're eligible for the shingles vaccine, but you've not been contacted</li>
+      <li>you did not have the vaccine when you were contacted and you're still under 80 (only people with a severely weakened immune system can get the vaccine after 80 years of age</li>
+      <li>you've had the shingles vaccine before but you now have a severely weakened immune system (you may need to have the shingles vaccine again)</li>
+      <li>you're due to have your vaccine and you're feeling unwell – you may need to wait until you're feeling better before having the vaccine</li>
+      <li>you need to change your vaccination appointment</li>
+    </ul>
+    <p>Your GP surgery can book or rearrange an appointment.</p>
+
+  </div>
+</div>
+    </div>
+  </details>
+
+
+<a href="#" class="nhsuk-link">Learn more about the Shingles vaccination on nhs.uk</a></div>
+      </div>
+    </div>
+
+    {% endblock %}
+  </div>
+</div>

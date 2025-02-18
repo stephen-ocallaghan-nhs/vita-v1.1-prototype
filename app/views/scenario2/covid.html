@@ -1,0 +1,121 @@
+{% extends 'layout-app.html' %} {% set hub = "Vaccinations" %} {% set scenario =
+  "scenario2" %} {% set
+pageHeading = "COVID-19 vaccine" %} {% set pageDescription = "The COVID-19 vaccine helps protect against COVID-19, which can be a serious or life-threatening illness. It's offered on the NHS to people at increased risk of getting seriously ill from COVID-19." %} {% block content %} {{ backLink({ href:
+"/scenario2/vaccinations", text: "Go back" }) }}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <!-- DYNAMIC PAGE TITLE -->
+    {{ dynamicPageTitle({ title: pageHeading, titleSecondary: true, description:
+    pageDescription })}}
+
+    <div class="nhsuk-warning-callout">
+  <h3 class="nhsuk-warning-callout__label">
+    <span role="text">
+      <span class="nhsuk-u-visually-hidden">Important: </span>
+      COVID-19 vaccinations are currently not available
+    </span>
+  </h3>
+  <p>Winter COVID-19 vaccinations have ended.</p>
+  <p>The NHS will contact you in spring 2025 if you're eligible for the COVID-19 vaccine.</p>
+</div>
+
+    <!-- Vaccinations -->
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+
+        <!-- Vaccinations -->
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-full">
+            <div
+              class="nhsapp-section-heading"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+              "
+            >
+              <h2 class="nhsuk-heading-s" style="margin: 0">More information</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <div class="nhsuk-u-padding-bottom-3"></div>
+
+<!--more information--> 
+<div class="nhsuk-expander-group">
+
+<!--What-->
+  <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+        What the COVID-19 vaccine is for
+      </span>
+    </summary>
+      <div class="nhsuk-details__text">
+      <p>COVID-19 vaccination is an important part of protecting yourself if you're at increased risk of getting seriously ill from COVID-19.</p>
+      <p>The COVID-19 vaccines are offered because viruses change and protection fades over time. It's important to top up your protection if you're eligible..</p>
+      <p>Getting the COVID-19 vaccine can:</p>
+      <ul>
+        <li>help reduce your risk of getting severe symptoms</li>
+        <li>help you recover more quickly if you catch COVID-19</li>
+        <li>help reduce your risk of having to go to hospital or dying from COVID-19</li>
+        <li>protect against different types of COVID-19 virus</li>
+      </ul>
+      <div class="nhsuk-inset-text">
+        <span class="nhsuk-u-visually-hidden">Information: </span>
+          <p>You may still get or spread COVID-19 even if you have a vaccine, so it's important to follow advice about how to avoid catching and spreading COVID-19.</p>
+    </div>
+
+    </div>
+  </details>
+<!--Who-->
+  <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+        Who should have the COVID-19 vaccine
+      </span>
+    </summary>
+    <div class="nhsuk-details__text">
+      <p>The COVID-19 vaccine is recommended for people at increased risk from COVID-19.</p>
+      <p>You may be offered a COVID-19 vaccine in spring if you:</p>
+      <ul>
+        <li>are aged 75 or over</li>
+        <li>are aged 6 months to 74 years and have a weakened immune system because of a health condition or treatment</li>
+        <li>live in a care home for older adults</li>
+      </ul>
+    </div>
+  </details>
+
+<!--How-->
+  <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+        How to get the COVID-19 vaccine
+      </span>
+    </summary>
+    <div class="nhsuk-details__text">
+      <p>The NHS will contact you if you're eligible for the COVID-19 vaccine.</p>
+      <p>It's usually offered on the NHS in spring and early winter.</p>
+      <p>When the COVID-19 vaccine is available, there will be different ways to get the vaccine. You may be able to:</p>
+      <ul>
+        <li>book online</li>
+        <li>go to a walk-in COVID-19 vaccination site</li>
+        <li>get vaccinated at a local service, such as a community pharmacy or your GP surgery</li>
+        <li>get vaccinated at your care home (if you live in a care home)</p>
+      </ul>
+      <p>This helps you understand your blood glucose levels and how they’re affected by meals and exercise. It should help you have more stable blood glucose levels.</p>
+
+    </div>
+  </details>
+
+
+<a href="#" class="nhsuk-link">Learn more about the COVID-19 vaccination on nhs.uk</a></div>
+      </div>
+    </div>
+
+    {% endblock %}
+  </div>
+</div>
