@@ -1,0 +1,149 @@
+{% extends 'layout-app.html' %} {% set hub = "Vaccinations" %} {% set scenario =
+  "scenario1" %} {% set
+pageHeading = "Flu vaccine" %} {% set pageDescription = "The flu vaccine helps protect against flu, which can be a serious or life-threatening illness. It's offered on the NHS every year in autumn or early winter to people at higher risk of getting seriously ill from flu." %} {% block content %} {{ backLink({ href:
+"/index", text: "Go back" }) }}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <!-- DYNAMIC PAGE TITLE -->
+    {{ dynamicPageTitle({ title: pageHeading, titleSecondary: true, description:
+    pageDescription })}}
+
+    <a
+  class="nhsuk-button nhsapp-button--primary nhsapp-button"
+  data-module="nhsuk-button"
+  href="/scenario1/nbs-end"> Book, cancel or change an RSV vaccination appointment
+  </a>
+
+  <a
+  class="nhsuk-button nhsapp-button--secondary nhsapp-button"
+  data-module="nhsuk-button"
+  href="/scenario1/nbs-end"> Find a pharmacy that offers free flu vaccination 
+  </a>
+
+    <div class="nhsuk-inset-text">
+  <span class="nhsuk-u-visually-hidden">Information: </span>
+
+  <p>This page is about the flu vaccine for adults. There are also pages about the <a href="#"> children's flu vaccine</a> and <a href="#" title="External website">flu jab in pregnancy.</a></p>
+</div>
+
+    <!-- Vaccinations -->
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+
+        <!-- Vaccinations -->
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-full">
+            <div
+              class="nhsapp-section-heading"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+              "
+            >
+              <h2 class="nhsuk-heading-s" style="margin: 0">More information</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <div class="nhsuk-u-padding-bottom-3"></div>
+
+<!--more information--> 
+<div class="nhsuk-expander-group">
+
+<!--What
+  <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+        What the flu vaccine is for
+      </span>
+    </summary>
+    <div class="nhsuk-details__text">
+      <p>The RSV vaccine helps protect against respiratory syncytial virus (RSV).
+        RSV is a common cause of coughs and colds. Most people get it several times during their life.</p>
+      <p>It usually gets better by itself, but in some people (especially babies and older adults) it can cause illnesses such as:</p>
+      <ul>
+        <li>pneumonia (a lung infection)</li>
+        <li>bronchiolitis (a chest infection that affects babies)</li>
+      </ul>
+      <p>These illnesses can cause serious breathing problems. They may need to be treated in hospital and can be life-threatening. 
+           <div class="nhsuk-u-padding-bottom-3"></div>
+      Getting RSV can also make your symptoms worse if you have a lung condition, such as chronic obstructive pulmonary disorder (COPD).
+           <div class="nhsuk-u-padding-bottom-3"></div>
+      The RSV vaccine helps reduce the risk of serious breathing problems like pneumonia and bronchiolitis.</p>
+
+    </div>
+  </details> -->
+<!--Who-->
+  <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+        Who should have the flu vaccine
+      </span>
+    </summary>
+    <div class="nhsuk-details__text">
+      <p>The flu vaccine is recommended for people at higher risk of getting seriously ill from flu.</p>
+      <p>It's offered on the NHS every year in autumn or early winter.</p>
+      <p>You can get the free NHS flu vaccine if you:</p>
+      <ul>
+        <li>are aged 65 or over (including those who will be 65 by 31 March 2025)</li>
+        <li>have certain long-term health conditions</li>
+        <li>are pregnant</li>
+        <li>live in a care home</li>
+        <li>are the main carer for an older or disabled person, or receive a carer's allowance</li>
+        <li>live with someone who has a weakened immune system</li>
+      </ul>
+      <h3 class="nhsuk-heading-xs">Frontline health and social care workers can also get a flu vaccine through their employer.</h3>
+
+    </div>
+  </details>
+
+<!--How-->
+  <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+        How to get the flu vaccine
+      </span>
+    </summary>
+    <div class="nhsuk-details__text">
+      <p>If you're eligible for an NHS flu vaccine, you can:</p>
+      <ul>
+        <li><a href="#">find a pharmacy that offers NHS flu vaccination</a> (if you're aged 18 or over)</li>
+        <li>contact your GP surgery to book an appointment</li>
+      </ul>
+      <p>Some people may be able to get vaccinated through their maternity service, care home, or their employer if they are a frontline health or social care worker.</p>
+      <p>The last date you will be able to get your flu vaccination is 31 March 2025, but it's best to get vaccinated sooner to protect yourself during winter.</p>
+
+  <div class="nhsuk-inset-text">
+    <span class="nhsuk-u-visually-hidden">Information: </span>
+      <h3>Having the flu vaccine at the same time as other vaccines</h3>
+      <p>You can have the flu vaccine at the same time as other vaccines such as the COVID-19 and shingles vaccines.</p>
+      <p>It's not usually given at the same time as the RSV vaccine, but you can have them at the same time if a doctor or nurse thinks it's needed.</p>
+  </div>
+
+  <a
+  class="nhsuk-button nhsapp-button--primary nhsapp-button"
+  data-module="nhsuk-button"
+  href="/scenario1/nbs-end"> Book, cancel or change an RSV vaccination appointment
+  </a>
+
+  <a
+  class="nhsuk-button nhsapp-button--secondary nhsapp-button"
+  data-module="nhsuk-button"
+  href="/scenario1/nbs-end"> Find a pharmacy that offers free flu vaccination 
+  </a>
+
+    </div>
+  </details>
+
+
+<a href="#" class="nhsuk-link">Learn more about the adult Flu vaccination on nhs.uk</a></div>
+      </div>
+    </div>
+
+    {% endblock %}
+  </div>
+</div>
