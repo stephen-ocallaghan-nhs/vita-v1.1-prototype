@@ -1,6 +1,6 @@
 {% extends 'layout-app.html' %} {% set hub = "Your health" %} {% set scenario =
 "scenario2" %} {% set
-pageHeading = "Vaccinations" %} {% set pageDescription = "Find out about vaccinations for babies, children and adults, including why they're important and how to get them." %} {% block content %} {{ backLink({ href:
+pageHeading = "Vaccinations hub" %} {% set pageDescription = "Find out about vaccinations for babies, children and adults, including why they're important and how to get them." %} {% block content %} {{ backLink({ href:
 "/scenario2/scenario2-yourhealth", text: "Go back" }) }}
 
 <div class="nhsuk-grid-row">
@@ -32,28 +32,17 @@ pageHeading = "Vaccinations" %} {% set pageDescription = "Find out about vaccina
 
 
 
-    <!-- Vaccinations -->
-    <div class="nhsuk-grid-row">
-      <div class="nhsuk-grid-column-full">
         <!-- Vaccinations -->
         <div class="nhsuk-grid-row">
           <div class="nhsuk-grid-column-full">
             <div
               class="nhsapp-section-heading"
-              style="
-                display: flex;
-                justify-content: space-between;
-                align-items: baseline;
-              "
             >
               <h2 class="nhsuk-heading-s" style="margin: 0">Vaccinations</h2>
-              <a href="/scenario2/all-vaccinations" class="nhsuk-link" style="margin: 0">View all</a>
             </div>
             <div><br><p>Based on your age, these vaccinations may be relevant - some vaccinations may not be needed or have already been given.</p></div>
           </div>
         </div>
-      </div>
-    </div>
 
      <div class="nhsuk-u-padding-bottom-3"></div>
 
@@ -188,8 +177,15 @@ pageHeading = "Vaccinations" %} {% set pageDescription = "Find out about vaccina
               </svg>
             </div>
           </li>
-
     </ol>
+
+{% from "nhsapp/components/card/macro.njk" import nhsappCard %}
+
+{{ nhsappCard({
+  title: 'View all vaccinations',
+  href: '/scenario2/all-vaccinations'
+}) }}
+
       </div>
     </div>
 
