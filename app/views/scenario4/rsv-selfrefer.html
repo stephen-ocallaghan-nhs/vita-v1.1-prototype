@@ -1,0 +1,60 @@
+{% extends 'layout-app.html' %} {% set hub = "Vaccinations" %} {% set scenario =
+  "scenario4" %} {% set
+pageHeading = "RSV vaccine" %} {% set pageDescription = "The RSV vaccine helps protect against respiratory syncytial virus (RSV), a common virus that can make babies and older adults seriously ill. It's recommended during pregnancy and for adults aged 75 to 79." %} {% block content %} {{ backLink({ href:
+"/scenario4/rsv", text: "Go back" }) }}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <!-- DYNAMIC PAGE TITLE -->
+    {{ dynamicPageTitle({ title: pageHeading, titleSecondary: true, description:
+    pageDescription })}}
+
+<!--more information--> 
+
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>Full eligibility criteria</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+    
+      <div class="nhsuk-card__content">
+        <p>The RSV vaccine is recommended if:</p>
+        <h4>If you're pregnant</h4>
+        <p>You should be offered the RSV vaccine around the time of your 28-week antenatal appointment.</p>
+        <p>Getting vaccinated as soon as possible from 28 weeks will provide the best protection for your baby. But the vaccine can be given later if needed, including up until you go into labour.</p>
+        <p>Speak to your maternity service or GP surgery if you're 28 weeks pregnant or more and have not been offered the vaccine.</p>
+
+        <h4>If you're aged 75 to 79</h4>
+        <p>Contact your GP surgery to book your RSV vaccination.</p>
+        <p>Your GP surgery may contact you about getting the RSV vaccine. This may be by letter, text, phone call or email.</p>
+        <p>You do not need to wait to be contacted before booking your vaccination.</p>
+
+        <div class="nhsuk-inset-text">
+          <span class="nhsuk-u-visually-hidden">Information: </span>
+        
+          <h4>If you're aged 80 or over</h4>
+          <p>If you turned 80 after 1 September 2024, you're eligible for the RSV vaccine until 31 August 2025.</p>
+          <p>You're not eligible for the RSV vaccine if you turned 80 on or before 1 September 2024.</p>
+        </div>
+    
+        <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
+          Continue to book an RSV vaccination appointment
+        </button>
+
+      </div>
+    </div>
+
+<!--Bottom-->
+    <div class="nhsuk-u-padding-bottom-4"></div>
+
+    <a href="#">Find out more about the RSV vaccination on NHS.uk</a>
+
+      </div>
+    </div>
+
+    {% endblock %}
+  </div>
+</div>

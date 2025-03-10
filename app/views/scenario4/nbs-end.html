@@ -1,0 +1,25 @@
+{% extends 'layout-app.html' %} {% set hub = "Your health" %} {% set scenario =
+"scenario4" %} {% set pageHeading = "National booking service" %} {% set pageDescription =
+"" %} {% block content %} {{ backLink({
+href: "/scenario4/vaccinations", text: "Go back" }) }}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <!-- DYNAMIC PAGE TITLE -->
+    {{ dynamicPageTitle({ title: pageHeading, titleSecondary: true, description:
+    pageDescription })}}
+
+    <h1 class="nhsuk-heading-l">You can now choose an appointment</h1>
+
+    <button
+    class="nhsuk-button nhsapp-button"
+    data-module="nhsuk-button"
+    type="submit"
+  >
+    Continue
+  </button>
+
+  </div>
+</div>
+
+{% endblock %}

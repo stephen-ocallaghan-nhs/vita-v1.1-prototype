@@ -1,0 +1,162 @@
+{% extends 'layout-app.html' %} {% set hub = "Your Health" %} {% set scenario =
+  "scenario3" %} {% set
+pageHeading = "Pneumococcal vaccine" %} {% set pageDescription = "The pneumococcal vaccine helps protect against serious illnesses like pneumonia and meningitis. It's recommended for people at higher risk of these illnesses, such as babies and adults aged 65 and over." %} {% block content %} {{ backLink({ href:
+"/scenario3/vaccinations", text: "Go back" }) }}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <!-- DYNAMIC PAGE TITLE -->
+    {{ dynamicPageTitle({ title: pageHeading, titleSecondary: true, description:
+    pageDescription })}}
+
+
+    <!-- Vaccinations -->
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+
+        <!-- Vaccinations -->
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-full">
+            <div
+              class="nhsapp-section-heading"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+              "
+            >
+              <h2 class="nhsuk-heading-s" style="margin: 0">More information</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <div class="nhsuk-u-padding-bottom-3"></div>
+
+<!--more information--> 
+<div class="nhsuk-expander-group">
+
+<!--What-->
+  <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+        What the pneumococcal vaccine is for
+      </span>
+    </summary>
+    <div class="nhsuk-details__text">
+      <p>The pneumococcal vaccine helps protect against some types of bacterial infections that can cause serious illnesses like:</p>
+      <ul>
+        <li>meningitis (an infection in the brain and spinal cord)</li>
+        <li>sepsis (a life-threatening reaction to an infection)</li>
+        <li>pneumonia (an infection in the lungs)</li>
+      </ul>
+      <p>It can also help protect against other illnesses such as sinusitis and ear infections.</p>
+
+    </div>
+  </details>
+<!--Who-->
+  <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+        Who should have the pneumococcal vaccine
+      </span>
+    </summary>
+
+    
+
+    <div class="nhsuk-details__text">
+      <p>The pneumococcal vaccine is recommended for babies, older people, and people at higher risk of getting seriously ill from pneumococcal infections.</p>
+      
+      <table role="table" class="nhsuk-table">
+        <caption class="nhsuk-table__caption"></caption>
+        <thead role="rowgroup" class="nhsuk-table__head">
+          <tr role="row">
+            <th role="columnheader" class="" scope="col">
+              Who should have it
+            </th>
+            <th role="columnheader" class="" scope="col">
+              How many doses
+            </th>
+          </tr>
+        </thead>
+        <tbody class="nhsuk-table__body">
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell">
+              Babies
+            </td>
+            <td role="cell" class="nhsuk-table__cell">
+              1st dose at 12 weeks and a booster dose at 1 year
+            </td>
+
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell">
+              People aged 65 and over
+            </td>
+            <td role="cell" class="nhsuk-table__cell">
+              Children and adults at higher risk of getting seriously ill
+            </td>
+
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell">
+              Children and adults at higher risk of getting seriously ill
+            </td>
+            <td role="cell" class="nhsuk-table__cell">
+              At least 1 dose (some people may need extra doses or regular doses)
+            </td>
+
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="nhsuk-u-padding-bottom-3"></div>
+      <p>Contact your GP surgery if you or your child have missed a pneumococcal vaccination.</p>
+
+    </div>
+  </details>
+
+<!--How-->
+  <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+        How to get the pneumococcal vaccine
+      </span>
+    </summary>
+    <div class="nhsuk-details__text">
+      <p>Your GP surgery will usually contact you if you or your child are eligible for the pneumococcal vaccine. This will usually be by letter, text, phone call or email.</p>
+      <p>If you are a welder or metal worker, speak to your employer about getting the vaccine.</p>
+
+      <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+        <div class="nhsuk-card--care__heading-container">
+          <h2 class="nhsuk-card--care__heading">
+            <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>Speak to a GP if:</span>
+          </h2>
+          <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+        </div>
+      
+        <div class="nhsuk-card__content">
+      
+          <ul>
+            <li>you have not been contacted to get the pneumococcal vaccine, but you think you or your child are eligible</li>
+            <li>you or your child have missed your pneumococcal vaccinations, or you're not sure if you've been vaccinated</li>
+            <li>you or your child are unwell – you may need to wait until you're feeling better before having the vaccine</li>
+            <li>you need to change a vaccination appointment</li>
+          </ul>
+          <p>Your GP surgery can book or rearrange an appointment.</p>
+      
+        </div>
+      </div>
+
+    </div>
+  </details>
+
+
+<a href="#" class="nhsuk-link">Learn more about the pneumococcal vaccination on nhs.uk</a></div>
+      </div>
+    </div>
+
+    {% endblock %}
+  </div>
+</div>
