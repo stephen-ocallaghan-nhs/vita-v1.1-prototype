@@ -179,12 +179,11 @@ pageHeading = "Vaccinations hub" %} {% set pageDescription = "Find out about vac
           </li>
     </ol>
 
-{% from "nhsapp/components/card/macro.njk" import nhsappCard %}
-
-{{ nhsappCard({
-  title: 'View all vaccinations',
-  href: '/scenario3/all-vaccinations'
-}) }}
+    <a
+    class="nhsuk-button nhsapp-button--secondary nhsapp-button"
+    data-module="nhsuk-button"
+    href="/scenario3/all-vaccinations"> View all vaccinations
+    </a>
 
       </div>
     </div>
