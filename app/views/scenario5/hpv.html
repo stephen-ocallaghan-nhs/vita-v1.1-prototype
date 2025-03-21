@@ -1,0 +1,156 @@
+{% extends 'layout-app.html' %} {% set hub = "Vaccinations" %} {% set scenario =
+  "scenario2" %} {% set
+pageHeading = "HPV vaccine" %} {% set pageDescription = "The HPV vaccine helps protect against human papillomavirus (HPV). It's recommended for children aged 12 to 13 years old and people at higher risk from HPV." %} {% block content %} {{ backLink({ href:
+"/scenario2/vaccinations", text: "Go back" }) }}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <!-- DYNAMIC PAGE TITLE -->
+    {{ dynamicPageTitle({ title: pageHeading, titleSecondary: true, description:
+    pageDescription })}}
+
+    <!-- Vaccinations -->
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+
+        <!-- Vaccinations -->
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-full">
+            <div
+              class="nhsapp-section-heading"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+              "
+            >
+              <h2 class="nhsuk-heading-s" style="margin: 0">More information</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <div class="nhsuk-u-padding-bottom-3"></div>
+
+<!--more information--> 
+<div class="nhsuk-expander-group">
+
+<!--What-->
+  <details class="nhsuk-details nhsuk-expander">
+  <summary class="nhsuk-details__summary">
+    <span class="nhsuk-details__summary-text">
+      What the HPV vaccine is for
+    </span>
+  </summary>
+  <div class="nhsuk-details__text">
+    <p>The HPV vaccine reduces your chances of getting human papillomavirus (HPV), a common virus that's spread through skin contact (usually when having sex).</p>
+    <p>Most types of HPV are harmless. But some types are linked to an increased risk of certain types of cancer, including:</p>
+    <ul>
+      <li>cervical cancer</li>
+      <li>mouth cancer</li>
+      <li>anal cancer</li>
+      <li>penile cancer</li>
+      <li>vulval cancer</li>
+      <li>vaginal cancer</li>
+
+    </ul>
+    <p>HPV can also cause genital warts.</p>
+
+  </div>
+  </details>
+<!--Who-->
+  <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+        Who should have the HPV vaccine
+      </span>
+    </summary>
+    <div class="nhsuk-details__text">
+      <p>The HPV vaccine is recommended for children aged 12 to 13 years old and people at higher risk from HPV.</p>
+      <h3>Children aged 12 to 13</h3>
+          <p>All children aged 12 to 13 (school year 8) are offered the HPV vaccine.</p>
+          <p>If you missed getting vaccinated when you were 12 or 13, the HPV vaccine is available for free on the NHS for:</p>
+          <ul>
+            <li>all girls under 25</li>
+            <li>boys born after 1 September 2006</li>
+          </ul>
+          <p>Contact your school nurse, school vaccination team or GP surgery if you or your child were eligible for the HPV vaccine but did not get vaccinated.</p>
+
+      <h3>Men aged 45 and under who have sex with men</h3>         
+          <p>Gay, bisexual and other men who have sex with men are at higher risk from HPV.</p>
+          <p>If you're a man aged 45 or under who has sex with men and you attend a sexual health or HIV clinic, you can get vaccinated against HPV.</p>
+          <p>You're eligible for the vaccine up until your 46th birthday.</p>
+
+      <h3>Other people at risk of HPV</h3>
+          <p>The HPV vaccine is also sometimes recommended for other people at higher risk from HPV, such as:</p>
+          <ul>
+            <li>any transgender people who are felt to have the same risk as men who have sex with men</li>
+            <li>sex workers</li>
+            <li>people with HIV</li>
+          </ul>
+
+      <h2>Who cannot have the HPV vaccine</h2>
+      <p>Most people who are eligible for the HPV vaccine can have it.</p>
+      <p>You only cannot have the vaccine if you've had a serious allergic reaction (anaphylaxis) to a previous dose of the vaccine, or an ingredient in the vaccine.</p>
+      <p>There's no evidence the vaccine is harmful if you're pregnant, but sometimes you may be advised to wait until you're no longer pregnant before having the vaccine.</p>
+      <p>You can have the HPV vaccine while breastfeeding.</p>
+      
+    </div>
+  </details>
+
+<!--How-->
+  <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+        How to get the HPV vaccine
+      </span>
+    </summary>
+    <div class="nhsuk-details__text">
+      <p>There are different ways to get the HPV vaccine.</p>
+      <h5>Where to get the HPV vaccine</h5>
+
+      <dl class="nhsuk-summary-list">
+
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__value">
+            Children aged 12 to 13 (school year 8)
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            Secondary school (or community clinics for those not in school)
+          </dd>
+      
+        </div>
+      
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__value">
+            Girls under 25 and boys born after 1 September 2006 who missed having the vaccine at school
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            Check with your school nurse, school vaccination team or GP surgery
+          </dd>
+      
+        </div>
+      
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__value">
+            Men aged 45 and under who have sex with men, and other people at higher risk of HPV
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            Sexual health clinics or HIV clinics
+          </dd>
+      
+        </div>
+      </dl>
+
+    </div>
+  </details>
+
+
+<a href="#" class="nhsuk-link">Learn more about the HPV vaccination on nhs.uk</a></div>
+      </div>
+    </div>
+
+    {% endblock %}
+  </div>
+</div>
