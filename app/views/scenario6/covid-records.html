@@ -1,0 +1,50 @@
+{% extends 'layout-app.html' %} {% set hub = "Vaccinations" %} {% set pageHeading
+= "Vaccinations" %} {% set pageDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." %} {% block content %}
+
+{{ backLink({
+  href: "/scenario2/scenario2-yourhealth",
+  text: "Go back"
+}) }}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <!-- DYNAMIC PAGE TITLE -->
+    {{ dynamicPageTitle({ title: pageHeading, titleSecondary: true, description:
+    pageDescription })}}
+
+<div class="nhsuk-card">
+  <div class="nhsuk-card__content">
+    <ul class="nhsuk-list">
+  <li class="nhsuk-u-font-weight-bold">Date</li>
+  <li>15 January 2023</li>
+  <li class="nhsuk-u-font-weight-bold">Name of vaccine</li>
+  <li>Sinister inc.</li>
+  <li class="nhsuk-u-font-weight-bold">Batch number</li>
+  <li>200035678</li>
+</ul>
+</div>
+  
+</div>
+<div class="nhsuk-card">
+  <div class="nhsuk-card__content">
+    <ul class="nhsuk-list">
+  <li class="nhsuk-u-font-weight-bold">Date</li>
+  <li>15 January 2023</li>
+  <li class="nhsuk-u-font-weight-bold">Name of vaccine</li>
+  <li>Sinister inc.</li>
+  <li class="nhsuk-u-font-weight-bold">Batch number</li>
+  <li>200035678</li>
+</ul>
+</div>
+</div>
+
+<ul class="nhsuk-list">
+  <li class="nhsuk-body-s"> If you have questions about your vaccine record, or to report an error, visit our help and support page</li>
+  <li class="nhsuk-body-s">Report suspected side effects to a vaccine on the Yellow Card reporting site at GOV.UK</li>
+  <li class="nhsuk-body-s">Find out what to expect after your COVID-19 vaccination at GOV.UK</li>
+</ul>
+
+
+</div>
+
+{% endblock %}
