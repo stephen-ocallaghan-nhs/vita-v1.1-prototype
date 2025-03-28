@@ -1,0 +1,100 @@
+{% extends 'layout-app.html' %} {% set hub = "Vaccinations" %} {% set scenario =
+  "scenario6" %} {% set
+pageHeading = "Whooping cough vaccination in pregnancy" %} {% set pageDescription = "" %} {% block content %} {{ backLink({ href:
+"/scenario6/vaccinations", text: "Go back" }) }}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <!-- DYNAMIC PAGE TITLE -->
+    {{ dynamicPageTitle({ title: pageHeading, titleSecondary: true, description:
+    pageDescription })}}
+
+    <!-- Vaccinations -->
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+
+<!--Introductory-->
+<p>Whooping cough (pertussis) rates have risen recently. Babies who are too young to start their vaccinations are at greatest risk.</p>
+<p>Whooping cough can be serious for babies and may lead to complications resulting in hospitalisation and even death.</p>
+<p>Pregnant women can help protect their babies by getting vaccinated.</p>
+<p>You should usually have the whooping cough vaccine around the time of your mid-pregnancy scan (usually at 20 weeks pregnant), but you can have it from 16 weeks.</p>
+<p>To help give the best protection to your baby, you should have the vaccine before 32 weeks. If you miss out, you can still have the vaccine later.</p>
+
+<!-- Vaccinations -->
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-full">
+            <div
+              class="nhsapp-section-heading"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+              "
+            >
+              <h2 class="nhsuk-heading-s" style="margin: 0">More information</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <div class="nhsuk-u-padding-bottom-3"></div>
+
+<!--more information--> 
+<div class="nhsuk-expander-group">
+
+<!--What-->
+  <details class="nhsuk-details nhsuk-expander">
+  <summary class="nhsuk-details__summary">
+    <span class="nhsuk-details__summary-text">
+      Why are pregnant women advised to have the whooping cough vaccine?
+    </span>
+  </summary>
+  <div class="nhsuk-details__text">
+    <p>Getting vaccinated while you're pregnant is highly effective in protecting your baby from developing whooping cough in the first few weeks of their life.</p>
+    <p>The immunity you get from the vaccine will pass to your baby through the placenta and provide passive protection for them until they are old enough to be routinely vaccinated against whooping cough at 8 weeks old.</p>
+
+  </div>
+  </details>
+<!--Who-->
+  <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+        When should I have the whooping cough vaccine?
+      </span>
+    </summary>
+    <div class="nhsuk-details__text">
+      <p>You usually have the whooping cough vaccine at 20 weeks pregnant, but you can have it from 16 weeks.</p>
+      <p>If you are 20 weeks pregnant and have not been offered the whooping cough vaccine, contact your midwife or GP surgery.</p>
+      <p>To give your baby the best protection against whooping cough, you should have the vaccine before 32 weeks of pregnancy. This maximises the chance that your baby will be protected from birth, through the transfer of your antibodies before they are born.</p>
+          
+      <p>If for any reason you miss having the vaccine before 32 weeks, you can have it later, even after you give birth. However, this is not ideal, as your baby is less likely to get protection from you. At this stage, having the vaccination may not directly protect your baby, but would help protect you from whooping cough and from passing it on to your baby.</p>
+
+
+      
+    </div>
+  </details>
+
+<!--How-->
+  <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+        How can I get the whooping cough vaccination?
+      </span>
+    </summary>
+    <div class="nhsuk-details__text">
+      <p>The vaccine is available from your GP, though some antenatal clinics may also offer it.</p>
+      <p>You're usually offered the vaccination around the time of your mid-pregnancy scan at 20 weeks pregnant, but you can have it from 16 weeks of your pregnancy. You may be offered the vaccination at a routine antenatal appointment.</p>
+      <p>If you are 20 weeks pregnant and have not been offered the vaccine, talk to your midwife or GP and make an appointment to get vaccinated.</p>
+
+    </div>
+  </details>
+
+
+<a href="#" class="nhsuk-link">Learn more about the whooping cough (Pertussis) vaccination on nhs.uk</a></div>
+      </div>
+    </div>
+
+    {% endblock %}
+  </div>
+</div>
