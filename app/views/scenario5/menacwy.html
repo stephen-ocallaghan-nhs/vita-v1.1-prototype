@@ -1,0 +1,109 @@
+{% extends 'layout-app.html' %} {% set hub = "Vaccinations" %} {% set scenario =
+  "scenario5" %} {% set
+pageHeading = "MenACWY vaccine" %} {% set pageDescription = "The MenACWY vaccine helps protect against life-threatening illnesses like meningitis and sepsis. It's offered to teenagers in school, but can be given up to the age of 25 if it's been missed." %} {% block content %} {{ backLink({ href:
+"/scenario5/vaccinations", text: "Go back" }) }}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <!-- DYNAMIC PAGE TITLE -->
+    {{ dynamicPageTitle({ title: pageHeading, titleSecondary: true, description:
+    pageDescription })}}
+
+    <!-- Vaccinations -->
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+
+        <!-- Vaccinations -->
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-full">
+            <div
+              class="nhsapp-section-heading"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+              "
+            >
+              <h2 class="nhsuk-heading-s" style="margin: 0">More information</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <div class="nhsuk-u-padding-bottom-3"></div>
+
+<!--more information--> 
+<div class="nhsuk-expander-group">
+
+<!--What-->
+  <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+        What the MenACWY vaccine is for
+      </span>
+    </summary>
+    <div class="nhsuk-details__text">
+      <p>Meningitis, sepsis and septicaemia (blood poisoning) are very serious, potentially life-threatening illnesses that can lead to life-changing disabilities, such as amputations, hearing loss and brain damage.</p>
+      <p>Anyone can get meningitis but it's most common in babies, children, teenagers and young adults.</p>
+      <p>Babies are given the MenB vaccine to help protect against a common type of bacteria that causes meningitis.</p>
+      <p>The MenACWY vaccine is given to teenagers and helps protect against 4 other types of bacteria linked to meningitis.</p>
+      <p>Although the vaccine is very effective, it does not prevent all types of meningitis, so it's still important to be aware of the symptoms of meningitis even if you've been vaccinated.</p>
+
+    </div>
+  </details>
+<!--Who-->
+  <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+        Who should have the MenACWY vaccine
+      </span>
+    </summary>
+    <div class="nhsuk-details__text">
+      <p>The MenACWY vaccine is recommended for all teenagers. It's usually given to children when they're 13 or 14 years old (school year 9 or 10).</p>
+      <p>If you missed having the vaccine when you were at school, you can get it up to the age of 25 years.</p>
+      <p>It's also available for some people who are at increased risk of getting meningitis because of:</p>
+      <ul>
+        <li>a medical condition</li>
+        <li>work</li>
+        <li>travel</li>
+        <li>close contact with someone who's infected</li>
+      </ul>
+
+
+        <h3>Who cannot have the MenACWY vaccine</h3>
+        <p>Most people can have the MenACWY vaccine.</p>
+        <p>The vaccine should not be given to those who have had:</p>
+        <ul>
+          <li>a serious allergic reaction (anaphylaxis) to a previous dose of the vaccine</li>
+          <li>a serious allergic reaction to any ingredient in the MenACWY vaccine</li>
+        </ul>
+    </div>
+  </details>
+
+<!--How-->
+  <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+        How to get the MenACWY vaccine
+      </span>
+    </summary>
+    <div class="nhsuk-details__text">
+      <p>Teenagers are usually given the MenACWY vaccine at school when they're 13 or 14 years old (school year 9 or 10).</p>
+      <p>If you missed having the vaccine when you were at school, you can still get it up until the age of 25. Ask your GP about getting vaccinated.</p>
+
+      <h3>College and university students</h3>
+        <p>If you're under 25 and you've not had the MenACWY vaccine before, you should ideally have it at least 2 weeks before starting college or university. Ask a GP about getting vaccinated.</p>
+        <p>If you've already started college or university, get the vaccine as soon as possible. Ask at the health centre on campus or register with a GP to get it.</p>
+      
+    </div>
+  </details>
+
+
+<a href="#" class="nhsuk-link">Learn more about the Shingles vaccination on nhs.uk</a></div>
+      </div>
+    </div>
+
+    {% endblock %}
+  </div>
+</div>

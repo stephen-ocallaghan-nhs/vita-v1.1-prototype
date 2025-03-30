@@ -1,0 +1,158 @@
+{% extends 'layout-app.html' %} {% set hub = "Your Health" %} {% set scenario =
+  "scenario7" %} {% set
+pageHeading = "MMR (measles, mumps and rubella) vaccine" %} {% set pageDescription = "The MMR vaccine gives long-term protection against measles, mumps and rubella." %} {% block content %} {{ backLink({ href:
+"/scenario7/vaccinations", text: "Go back" }) }}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <!-- DYNAMIC PAGE TITLE -->
+    {{ dynamicPageTitle({ title: pageHeading, titleSecondary: true, description:
+    pageDescription })}}
+
+
+    <!-- Vaccinations -->
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+
+        <!-- Vaccinations -->
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-full">
+            <div
+              class="nhsapp-section-heading"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+              "
+            >
+              <h2 class="nhsuk-heading-s" style="margin: 0">More information</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <div class="nhsuk-u-padding-bottom-3"></div>
+
+<!--more information--> 
+<div class="nhsuk-expander-group">
+
+<!--What-->
+  <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+        What the MMR vaccine is for
+      </span>
+    </summary>
+    <div class="nhsuk-details__text">
+      <p>The MMR vaccine protects against:</p>
+      <ul>
+        <li>measles</li>
+        <li>mumps</li>
+        <li>rubella</li>
+      </ul>
+      <p>These 3 infections spread easily between people and can lead to serious problems including meningitis, blindness and hearing loss.</p>
+      <p>If you're pregnant, getting measles can cause premature birth, miscarriage or still birth. And getting rubella can cause serious problems for your baby such as damage to their sight and hearing.</p>
+      <p>2 doses of the MMR vaccine gives you long-term protection.</p>
+      <p>Getting vaccinated also helps protect people who cannot be vaccinated, such as unborn babies, newborn babies and anyone with a weakened immune system.</p>
+
+    </div>
+  </details>
+<!--Who-->
+  <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+        Who should have the MMR vaccine
+      </span>
+    </summary>
+
+    <div class="nhsuk-details__text">
+      <p>The MMR vaccine is recommended for all babies and young children, but older children and adults can have it if they were not vaccinated when they were younger.</p>
+      
+      <h4>Babies and young children</h4>
+      <p>Babies and young children are given 2 doses of the MMR vaccine as part of the NHS vaccination schedule.</p>
+      <p>They're given a dose at:</p>
+      <ul>
+        <li>1 year old</li>
+        <li>3 years and 4 months</li>
+      </ul>
+      <p>Babies between 6 and 12 months can have an extra dose of the MMR vaccine before this if they need it to protect them if:</p>
+      <ul>
+        <li>they're travelling abroad to an area with a lot of measles</li>
+        <li>they've been close to someone with measles</li>
+        <li>there's an outbreak of measles</li>
+      </ul>
+
+      <h4>Older children and adults</h4>
+      <p>The MMR vaccine can be given at any age.</p>
+      <p>Speak to a GP about getting vaccinated if you did not have it as a child, you only had 1 dose or you're not sure if you've been fully vaccinated.</p>
+      <p>It's especially important to make sure you're vaccinated if:</p>
+      <ul>
+        <li>you're a child, teenager or young adult</li>
+        <li>you could become pregnant</li>
+        <li>you're travelling to, or living in, a country where there is a higher risk of getting measles, mumps or rubella</li>
+        <li>you're a healthcare worker</li>
+        <li>you were born between 1970 and 1990 (as you may not have been vaccinated against all 3 infections)</li>
+      </ul>
+
+      <div class="nhsuk-u-padding-bottom-3"></div>
+      <p>Your GP surgery should be able to tell you which vaccinations you've already had.</p>
+      <p>If you were born before 1970 and have not had measles, mumps or rubella (german measles) or their vaccines, you can ask your GP surgery for the MMR vaccine.</p>
+
+      <h3>Who cannot have the MMR vaccine</h3>
+      <p>Most people who need the MMR vaccine can have it.</p>
+      <p>But because it's a live vaccine, which means it contains a weakened version of measles, mumps and rubella, it's not suitable for everyone.</p>
+      <p>The MMR vaccine is not given if:</p>
+      <ul>
+        <li>you're pregnant</li>
+        <li>you have a weakened immune system, either because of a health condition or because you are taking medicines that suppress the immune system</li>
+        <li>you've had a serious allergic reaction (anaphylaxis) to any ingredients in the vaccine, including gelatine or neomycin</li>
+      </ul>
+    </div>
+  </details>
+
+<!--How-->
+  <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+        How to get the MMR vaccine
+      </span>
+    </summary>
+    <div class="nhsuk-details__text">
+      <p>Your GP surgery will usually contact you about your child's MMR vaccinations. This will usually be by letter, text message, phone call or email.</p>
+      <p>Older children who missed being vaccinated when they were younger may also be able to get the MMR vaccine through their school.</p>
+      <p>If you need the MMR vaccine for your work, you should be able to get it through your employer's occupational health service.</p>
+
+      <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+        <div class="nhsuk-card--care__heading-container">
+          <h2 class="nhsuk-card--care__heading">
+            <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>Speak to your GP surgery if:</span>
+          </h2>
+          <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+        </div>
+      
+        <div class="nhsuk-card__content">
+      
+          <ul>
+            <li>you have not been contacted to get your child's MMR vaccine</li>
+            <li>your child has missed their MMR vaccine, or you're not sure if they've had both doses of the vaccine</li>
+            <li>you think you might need the MMR vaccine</li>
+            <li>your child has a temperature and is due to have the vaccine – they may need to wait until they're feeling better before having the vaccine</li>
+            <li>you need to change a vaccination appointment</li>
+          </ul>
+          <p>Your GP surgery can book or rearrange an appointment.</p>
+      
+        </div>
+      </div>
+
+    </div>
+  </details>
+
+
+<a href="#" class="nhsuk-link">Learn more about the MMR vaccination on nhs.uk</a></div>
+      </div>
+    </div>
+
+    {% endblock %}
+  </div>
+</div>

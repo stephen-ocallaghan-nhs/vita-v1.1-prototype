@@ -1,6 +1,6 @@
-{% extends 'layout-app.html' %} {% set hub = "Vaccinations" %} {% set scenario =
+{% extends 'layout-app.html' %} {% set hub = "Your health" %} {% set scenario =
   "scenario3" %} {% set
-pageHeading = "RSV vaccine" %} {% set pageDescription = "The RSV vaccine helps protect against respiratory syncytial virus (RSV), a common virus that can make babies and older adults seriously ill. It's recommended during pregnancy and for adults aged 75 to 79." %} {% block content %} {{ backLink({ href:
+pageHeading = "Are you over 28 weeks pregnant?" %} {% set pageDescription = "As you're under 75, you're only able to get an RSV vaccine if you're over 28 weeks pregnant." %} {% block content %} {{ backLink({ href:
 "/scenario3/rsv", text: "Go back" }) }}
 
 <div class="nhsuk-grid-row">
@@ -10,42 +10,35 @@ pageHeading = "RSV vaccine" %} {% set pageDescription = "The RSV vaccine helps p
     pageDescription })}}
 
 <!--more information--> 
+<div class="nhsuk-form-group">
+  <fieldset class="nhsuk-fieldset">
+    <div class="nhsuk-radios">
 
-
-    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
-      <div class="nhsuk-card--care__heading-container">
-        <h2 class="nhsuk-card--care__heading">
-          <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>Full eligibility criteria</span>
-        </h2>
-        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="yes">
+        <label class="nhsuk-label nhsuk-radios__label" for="example-1">
+          Yes, I am over 28 weeks pregnant
+        </label>
       </div>
-    
-      <div class="nhsuk-card__content">
-        <p>The RSV vaccine is recommended if:</p>
-        <h4>If you're pregnant</h4>
-        <p>You should be offered the RSV vaccine around the time of your 28-week antenatal appointment.</p>
-        <p>Getting vaccinated as soon as possible from 28 weeks will provide the best protection for your baby. But the vaccine can be given later if needed, including up until you go into labour.</p>
-        <p>Speak to your maternity service or GP surgery if you're 28 weeks pregnant or more and have not been offered the vaccine.</p>
 
-        <h4>If you're aged 75 to 79</h4>
-        <p>Contact your GP surgery to book your RSV vaccination.</p>
-        <p>Your GP surgery may contact you about getting the RSV vaccine. This may be by letter, text, phone call or email.</p>
-        <p>You do not need to wait to be contacted before booking your vaccination.</p>
-
-        <div class="nhsuk-inset-text">
-          <span class="nhsuk-u-visually-hidden">Information: </span>
-        
-          <h4>If you're aged 80 or over</h4>
-          <p>If you turned 80 after 1 September 2024, you're eligible for the RSV vaccine until 31 August 2025.</p>
-          <p>You're not eligible for the RSV vaccine if you turned 80 on or before 1 September 2024.</p>
-        </div>
-    
-        <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
-          Continue to book an RSV vaccination appointment
-        </button>
-
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
+        <label class="nhsuk-label nhsuk-radios__label" for="example-2">
+          No, I am not over 28 weeks pregnant
+        </label>
       </div>
     </div>
+  </fieldset>
+
+</div>
+
+<button
+  class="nhsuk-button nhsapp-button"
+  data-module="nhsuk-button"
+  href="#"
+>
+  Continue
+</button>
 
 <!--Bottom-->
     <div class="nhsuk-u-padding-bottom-4"></div>

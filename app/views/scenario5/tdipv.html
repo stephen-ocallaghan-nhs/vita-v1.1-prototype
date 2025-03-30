@@ -1,0 +1,137 @@
+{% extends 'layout-app.html' %} {% set hub = "Vaccinations" %} {% set scenario =
+  "scenario5" %} {% set
+pageHeading = "Td/IPV vaccine (3-in-1 booster) vaccine" %} {% set pageDescription = "The Td/IPV vaccine (also called the 3-in-1 teenage booster) helps protect against tetanus, diphtheria and polio. It's recommended for children in school year 9 and people at higher risk of these illnesses." %} {% block content %} {{ backLink({ href:
+"/scenario5/vaccinations", text: "Go back" }) }}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <!-- DYNAMIC PAGE TITLE -->
+    {{ dynamicPageTitle({ title: pageHeading, titleSecondary: true, description:
+    pageDescription })}}
+
+    <!-- Vaccinations -->
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+
+        <!-- Vaccinations -->
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-full">
+            <div
+              class="nhsapp-section-heading"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+              "
+            >
+              <h2 class="nhsuk-heading-s" style="margin: 0">More information</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <div class="nhsuk-u-padding-bottom-3"></div>
+
+<!--more information--> 
+<div class="nhsuk-expander-group">
+
+<!--What-->
+  <details class="nhsuk-details nhsuk-expander">
+  <summary class="nhsuk-details__summary">
+    <span class="nhsuk-details__summary-text">
+      What the Td/IPV vaccine is for
+    </span>
+  </summary>
+  <div class="nhsuk-details__text">
+    <p>The Td/IPV vaccine protects against 3 serious illnesses:</p>
+    <ul>
+      <li>tetanus</li>
+      <li>diphtheria</li>
+      <li>polio</li>
+    </ul>
+    <p>It boosts the protection provided by the 6-in-1 vaccine and 4-in-1 pre-school booster vaccine.</p>
+
+  </div>
+  </details>
+<!--Who-->
+  <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+        Who should have the Td/IPV vaccine
+      </span>
+    </summary>
+    <div class="nhsuk-details__text">
+      <p>Children are given the Td/IPV vaccine (3-in-1 teenage booster) at around 13 or 14 years old (school year 9) as part of the NHS vaccination schedule.</p>
+      <p>If you or your child missed getting vaccinated, speak to your school nurse, or your GP surgery if you've left school, about getting vaccinated.</p>
+      <p>The Td/IPV vaccine is also given to adults at higher risk of tetanus, diphtheria or polio, such as:</p>
+      <ul>
+        <li>people who need protection against these illnesses before travelling abroad (the vaccine may be recommended if you're going to an area where it may be difficult to get medical help quickly and your last dose was more than 10 years ago)</li>
+        <li>people who have a large, dirty or deep wound that could mean they're at risk of tetanus</li>
+        <li>people at risk of these illnesses through their work, such as some laboratory staff</li>
+      </ul>
+
+      <h3>Who cannot have the Td/IPV vaccine</h3>
+      <p>Most people who need it can have the Td/IPV vaccine, including if you're pregnant or breastfeeding.</p>
+      <p>You only cannot have the vaccine if:</p>
+      <ul>
+        <li>you've had a serious allergic reaction (anaphylaxis) to a previous dose of the vaccine</li>
+        <li>you've had a serious allergic reaction to anything in the vaccine (including neomycin, streptomycin or polymyxin)</li>
+      </ul>
+      <p>The vaccine may also not be suitable for you if you have a rare condition called phenylketonuria. Tell the person who'll be vaccinating you if you have this.</p>
+      
+    </div>
+  </details>
+
+<!--How-->
+  <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+        How to get the Td/IPV vaccine
+      </span>
+    </summary>
+    <div class="nhsuk-details__text">
+      <p>There are different ways to get the Td/IPV vaccine.</p>
+
+      <table class="nhsuk-table">
+        <thead role="rowgroup" class="nhsuk-table__head">
+          <tr role="row">
+            <th role="columnheader" class="" scope="col">
+              Who should have it
+            </th>
+            <th role="columnheader" class="" scope="col">
+              Where to get it
+            </th>
+          </tr>
+        </thead>
+        <tbody class="nhsuk-table__body">
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell">Children aged 13 or 14 (school year 9)</td>
+            <td class="nhsuk-table__cell ">Secondary school (or community clinics for those not in school)</td>
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell">Anyone who missed getting vaccinated at 13 or 14</td>
+            <td class="nhsuk-table__cell ">Check with your school nurse (or your GP surgery if you've left school)</td>
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell">People who need the vaccination for travel (you may have to pay for this)</td>
+            <td class="nhsuk-table__cell ">Travel vaccination clinics, pharmacies with travel health services and some GP surgeries</td>
+          </tr>
+          <tr>
+            <td class="nhsuk-table__cell">People who need the vaccination for their job</td>
+            <td class="nhsuk-table__cell ">Speak to your employer about getting vaccinated</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </details>
+
+
+<a href="#" class="nhsuk-link">Learn more about the Td/IPV vaccination on nhs.uk</a></div>
+      </div>
+    </div>
+
+    {% endblock %}
+  </div>
+</div>

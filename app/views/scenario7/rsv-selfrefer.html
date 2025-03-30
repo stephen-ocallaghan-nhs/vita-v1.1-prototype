@@ -1,0 +1,53 @@
+{% extends 'layout-app.html' %} {% set hub = "Your health" %} {% set scenario =
+  "scenario7" %} {% set
+pageHeading = "Are you over 28 weeks pregnant?" %} {% set pageDescription = "As you're under 75, you're only able to get an RSV vaccine if you're over 28 weeks pregnant." %} {% block content %} {{ backLink({ href:
+"/scenario7/rsv", text: "Go back" }) }}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <!-- DYNAMIC PAGE TITLE -->
+    {{ dynamicPageTitle({ title: pageHeading, titleSecondary: true, description:
+    pageDescription })}}
+
+<!--more information--> 
+<div class="nhsuk-form-group">
+  <fieldset class="nhsuk-fieldset">
+    <div class="nhsuk-radios">
+
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="yes">
+        <label class="nhsuk-label nhsuk-radios__label" for="example-1">
+          Yes, I am over 28 weeks pregnant
+        </label>
+      </div>
+
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
+        <label class="nhsuk-label nhsuk-radios__label" for="example-2">
+          No, I am not over 28 weeks pregnant
+        </label>
+      </div>
+    </div>
+  </fieldset>
+
+</div>
+
+<button
+  class="nhsuk-button nhsapp-button"
+  data-module="nhsuk-button"
+  href="#"
+>
+  Continue
+</button>
+
+<!--Bottom-->
+    <div class="nhsuk-u-padding-bottom-4"></div>
+
+    <a href="#">Find out more about the RSV vaccination on NHS.uk</a>
+
+      </div>
+    </div>
+
+    {% endblock %}
+  </div>
+</div>

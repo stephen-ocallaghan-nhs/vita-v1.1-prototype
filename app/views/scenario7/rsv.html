@@ -1,0 +1,162 @@
+{% extends 'layout-app.html' %} {% set hub = "Vaccinations" %} {% set scenario =
+  "scenario7" %} {% set
+pageHeading = "RSV vaccine" %} {% set pageDescription = "The RSV vaccine helps protect against respiratory syncytial virus (RSV), a common virus that can make babies and older adults seriously ill. It's recommended during pregnancy and for adults aged 75 to 79." %} {% block content %} {{ backLink({ href:
+"/scenario7/vaccinations", text: "Go back" }) }}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <!-- DYNAMIC PAGE TITLE -->
+    {{ dynamicPageTitle({ title: pageHeading, titleSecondary: true, description:
+    pageDescription })}}
+
+    <!--Eligibility-->
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>We believe you might be eligible</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+    
+      <div class="nhsuk-card__content">
+    
+        <ul>
+          <li>you're aged between 75 and 79 </li>
+          <li>According to our records, you have not received the RSV vaccination</li>
+        </ul>
+      </div>
+        </div>
+    
+    <!--Availability-->
+    <a
+      class="nhsuk-button nhsapp-button--primary nhsapp-button"
+      data-module="nhsuk-button"
+      href="/scenario7/nbs-end"> Book, cancel or change an RSV vaccination appointment
+      </a>
+    <br>
+      <a
+      class="nhsuk-button nhsapp-button--secondary nhsapp-button"
+      data-module="nhsuk-button"
+      href="#"> Find a walk-in site near you
+      </a>
+
+      <div class="nhsuk-inset-text">
+        <span class="nhsuk-u-visually-hidden">Information: </span>
+      
+        <p>You can also contact your GP surgery to book your RSV vaccination.</p>
+        <p>You do not need to wait to be contacted before booking your vaccination.</p>
+      </div>
+
+<!--more information--> 
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <!-- Vaccinations -->
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-full">
+            <div
+              class="nhsapp-section-heading"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+              "
+            >
+              <h2 class="nhsuk-heading-s" style="margin: 0">More information</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nhsuk-u-padding-bottom-3"></div>
+
+    <div class="nhsuk-expander-group">
+    <!--What-->
+    <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+        What the RSV vaccine is for
+      </span>
+    </summary>
+    <div class="nhsuk-details__text">
+      <p>The RSV vaccine helps protect against respiratory syncytial virus (RSV).
+        RSV is a common cause of coughs and colds. Most people get it several times during their life.</p>
+      <p>It usually gets better by itself, but in some people (especially babies and older adults) it can cause illnesses such as:</p>
+      <ul>
+        <li>pneumonia (a lung infection)</li>
+        <li>bronchiolitis (a chest infection that affects babies)</li>
+      </ul>
+      <p>These illnesses can cause serious breathing problems. They may need to be treated in hospital and can be life-threatening. 
+           <div class="nhsuk-u-padding-bottom-3"></div>
+      Getting RSV can also make your symptoms worse if you have a lung condition, such as chronic obstructive pulmonary disorder (COPD).
+           <div class="nhsuk-u-padding-bottom-3"></div>
+      The RSV vaccine helps reduce the risk of serious breathing problems like pneumonia and bronchiolitis.</p>
+
+    </div>
+    </details>
+
+    <!--Who-->
+    <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+        Who should have the RSV vaccine
+      </span>
+    </summary>
+    <div class="nhsuk-details__text">
+      <p>The RSV vaccine is recommended if:</p>
+      <ul>
+        <li>you're pregnant – the vaccine is recommended during every pregnancy (from 28 weeks onwards) to help protect your baby after they're born</li>
+        <li>you're aged 75 to 79</li>
+      </ul>
+      <div class="nhsuk-inset-text">
+    <span class="nhsuk-u-visually-hidden">Information: </span>
+
+    <p><b>If you're aged 80 or over</b>
+    <br>If you turned 80 after 1 September 2024, you're eligible for the RSV vaccine until 31 August 2025.
+    <br>You're not eligible for the RSV vaccine if you turned 80 on or before 1 September 2024.</p>
+    </div>
+
+  <!--Who cannot-->
+        <h3>Who cannot have the RSV vaccine</h3>
+        <p>Most people who are eligible for the RSV vaccine can have it.</p>
+        <p>You only cannot have the vaccine if you've had a serious allergic reaction (anaphylaxis) to a previous dose of the vaccine or an ingredient in the vaccine.</p>
+
+    </div>
+    </details>
+    
+    <!--How-->
+    <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+        How to get the RSV vaccine
+      </span>
+    </summary>
+    <div class="nhsuk-details__text">
+      <p>There are different ways to get the RSV vaccine.</p>
+      <h3 class="nhsuk-heading-s">If you're pregnant</h3>
+      <p>You should be offered the RSV vaccine around the time of your 28-week antenatal appointment.</p>
+        <p>Getting vaccinated as soon as possible from 28 weeks will provide the best protection for your baby. But the vaccine can be given later if needed, including up until you go into labour.</p>
+          <p>Speak to your maternity service or GP surgery if you're 28 weeks pregnant or more and have not been offered the vaccine.</p>
+      <h3 class="nhsuk-heading-s">If you're aged 75 to 79</h3>
+      <p>Contact your GP surgery to book your RSV vaccination.</p>
+        <p>Your GP surgery may contact you about getting the RSV vaccine. This may be by letter, text, phone call or email.</p>
+          <p>You do not need to wait to be contacted before booking your vaccination.</p>
+          
+      <a href="/scenario7/rsv-selfrefer" class="nhsuk-button nhsapp-button--secondary nhsapp-button" data-module="nhsuk-button">
+            I believe I am eligible
+      </a>
+      
+    </div>
+    </details>
+
+<!--Bottom-->
+    <div class="nhsuk-u-padding-bottom-4"></div>
+
+    <a href="#">Find out more about the RSV vaccination on NHS.uk</a>
+
+      </div>
+    </div>
+
+    {% endblock %}
+  </div>
+</div>

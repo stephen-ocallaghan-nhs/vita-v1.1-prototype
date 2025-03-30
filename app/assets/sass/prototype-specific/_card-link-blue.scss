@@ -1,0 +1,161 @@
+/** card-link-blue.scss
+ * NHS App-style card with blue background and white text/icons
+ */
+
+ $card-link-blue-border-width: 1px;
+ $card-link-blue-border-color: transparent;
+ $card-link-blue-hover-bg: darken($color_nhsuk-blue, 10%);
+ 
+ .card-link-blue {
+   @include nhsuk-responsive-margin(5, "bottom");
+ 
+   background-color: $color_nhsuk-blue;
+   color: $color_nhsuk-white;
+   border: $card-link-blue-border-width solid $card-link-blue-border-color;
+   position: relative;
+   padding: 0;
+ 
+   &__title {
+     @include nhsuk-typography-responsive(22);
+     font-weight: bold;
+     margin-bottom: 0;
+     color: $color_nhsuk-white;
+   }
+ 
+   .card-link-blue__icon {
+     height: 24px;
+     width: 24px;
+     flex: none;
+ 
+     @include mq($from: tablet) {
+       height: 28px;
+       width: 28px;
+     }
+     fill: $color_nhsuk-white;
+   }
+ 
+   &:hover {
+     background-color: $card-link-blue-hover-bg;
+ 
+     .card-link-blue__icon {
+       fill: $color_nhsuk-white;
+     }
+   }
+ 
+   &__container {
+     display: flex;
+     align-items: center;
+     gap: nhsuk-spacing(3);
+ 
+     margin: 0 nhsuk-spacing(3);
+     padding: 20px 0;
+ 
+     @include mq($from: tablet) {
+       margin: 0 nhsuk-spacing(4);
+       padding: nhsuk-spacing(4) 0;
+     }
+   }
+ 
+   &__content {
+     flex-grow: 1;
+ 
+     :last-child {
+       margin-bottom: 0;
+     }
+   }
+ 
+   &__link {
+    @include nhsuk-typography-responsive(22);
+    font-weight: bold;
+    text-decoration: none;
+    color: $color_nhsuk-white;
+    position: relative;
+    z-index: 1; // Ensures the link is on top of the pseudo-element
+  
+    &:hover {
+      text-decoration: underline;
+      color: $color_nhsuk-white;
+    }
+  
+    // Make entire card clickable via pseudo-element
+    &::after {
+      content: "";
+      position: absolute;
+      top: -20px;
+      right: 0;
+      bottom: -20px;
+      left: 0;
+      z-index: 0; // Behind the text
+    }
+  }
+  
+ 
+   &__below {
+     :last-child {
+       margin-bottom: 0;
+     }
+   }
+ 
+   &__footer {
+     border-top: $card-link-blue-border-width solid rgba(255, 255, 255, 0.4); // subtle divider
+     margin: 0 nhsuk-spacing(3);
+     padding: 20px 0;
+ 
+     @include mq($from: tablet) {
+       margin: 0 nhsuk-spacing(4);
+       padding: nhsuk-spacing(4) 0;
+     }
+ 
+     :last-child {
+       margin-bottom: 0;
+     }
+   }
+ }
+ 
+ .card-link-blue-group {
+   @include nhsuk-responsive-margin(5, "bottom");
+   list-style: none;
+   padding: 0;
+ 
+   &--stacked {
+     @include nhsuk-responsive-margin(5, "bottom");
+ 
+     .card-link-blue {
+       border-bottom: 0;
+       border-top: 0;
+       margin-bottom: 0;
+ 
+       .card-link-blue__container {
+         border-bottom: $card-link-blue-border-width solid rgba(255, 255, 255, 0.4);
+       }
+ 
+       &:first-of-type {
+         border-top: $card-link-blue-border-width solid rgba(255, 255, 255, 0.4);
+       }
+ 
+       &:last-of-type {
+         border-bottom: $card-link-blue-border-width solid rgba(255, 255, 255, 0.4);
+ 
+         .card-link-blue__container {
+           border-bottom: 0;
+         }
+       }
+     }
+   }
+ }
+ 
+ // spacing tweaks when cards precede headings
+ .card-link-blue + .nhsapp-section-heading,
+ .card-link-blue + .nhsuk-heading-l {
+   @include nhsuk-responsive-padding(4, "top");
+ }
+ 
+ .card-link-blue + .nhsuk-heading-m,
+ .card-link-blue + .nhsuk-heading-s {
+   padding-top: nhsuk-spacing(1);
+ 
+   @include mq($from: tablet) {
+     padding-top: nhsuk-spacing(2);
+   }
+ }
+ 
